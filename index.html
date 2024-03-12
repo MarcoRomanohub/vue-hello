@@ -17,7 +17,9 @@
 
 
     <div id="app"> 
+        <!-- le graffe {} si usano all'interno dell'elemento non all'interno del tag -->
         <h1> {{ message }}  </h1>
+        <!-- img con testo html -->
         <div v-html="image"></div>
         <input type="text" v-model="reactive" >
         <input type="text" v-model="coloreCss" >
@@ -27,6 +29,8 @@
         <h5> {{reactive}} </h5>
         <h6> {{reactive}} </h6>
         <h3>  Buongiorno {{name}} !! </h3>
+        <!-- img con : binding -->
+        <img :src=" image2.path " alt="image2.alt">
     </div>
 
 <script src="script.js"></script>    
